@@ -61,7 +61,7 @@ public class CalDay {
 	
 		setAppts(new LinkedList<Appt>());
 	
-		valid = true;
+		valid = false;
 	}
 	
 	/**
@@ -183,7 +183,7 @@ public class CalDay {
 //			sb.append(this.appts);
 			sb.append("\n");
 		}
-       	 return sb.toString();
+       	 return toString();
 
 	}
 }
