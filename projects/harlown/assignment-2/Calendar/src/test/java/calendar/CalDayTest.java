@@ -55,5 +55,15 @@ public class CalDayTest {
 
 	 	//Appt appt = new Appt(startHour,
 	 }
-//add more unit tests as you needed	
+@Test
+	  public void test04()  throws Throwable  {
+		int day,month,year;
+		GregorianCalendar greg=new GregorianCalendar();
+		//GregorianCalendar.DAY_OF_MONTH=10;
+	 	CalDay calday = new CalDay(greg);
+	 	//calday.toString();
+
+
+	 	//Appt appt = new Appt(startHour,
+	 }
 }
