@@ -37,7 +37,7 @@ public class TimeTable {
 	        
 	        //Make sure that the first day is before the last day
 	        if (!firstDay.before(lastDay)) {
-	        	throw new DateOutOfRangeException ("Second dadfdfte specified is not  before the first date specified.");
+	        	throw new DateOutOfRangeException ("Second date specified is not  before the first date specified.");
 	        }
 	        
 	        
@@ -109,7 +109,7 @@ public class TimeTable {
 	            
 
 	            //Make sure that there is a limited number of recurrences
-	            for (int i = 0; i < appt.getRecurNumber()+1; i++) {
+	            for (int i = 0; i < appt.getRecurNumber(); i++) {
 	                
 	                //Add the day of occurrence to the list if it is after the first day
 	                if (!occurrenceDay.before(firstDay)) {

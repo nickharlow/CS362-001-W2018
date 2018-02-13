@@ -170,9 +170,9 @@ public class CalDay {
 	     StringBuilder sb = new StringBuilder();
 	
 		if (isValid()) {
-			String todayDate = (getMonth()) + "/" + getDay() + "/" + getYear();
-			sb.append("\t --+- " + todayDate + " --- \n");
-			sb.append(" --- -------- Appointments ------------ --- \n");
+			String todayDate = (getDay()) + "/" + getDay() + "/" + getYear();
+			sb.append("--+- " + todayDate + " ---");
+			//sb.append(" --- -------- Appointments ------------ --- \n");
 			Iterator<Appt> itr = this.appts.iterator();
 		    while(itr.hasNext()) {
 		         Object element = itr.next();
@@ -181,9 +181,9 @@ public class CalDay {
 		      }
 		  
 //			sb.append(this.appts);
-			sb.append("\n");
+			sb.append("\t");
 		}
-       	 return toString();
+       	 return sb.toString();
 
 	}
 }
