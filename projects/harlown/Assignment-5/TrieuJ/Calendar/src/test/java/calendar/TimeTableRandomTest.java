@@ -16,12 +16,14 @@ import static org.junit.Assert.*;
  * Random Test Generator  for TimeTable class.
  */
 
+
 public class TimeTableRandomTest {
 	private static final long TestTimeout = 60 * 50 * 1; /* Timeout at 30 seconds */
 	private static final int NUM_TESTS=100;
     /**
      * Generate Random Tests that tests TimeTable Class.
      */
+    
 	 @Test
 	  public void radnomtest()  throws Throwable  {
 		long startTime = Calendar.getInstance().getTimeInMillis();
